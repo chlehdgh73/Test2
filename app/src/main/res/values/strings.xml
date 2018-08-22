@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Test2</string>
+    <string name="facebook_app_id">227142767893716</string>
+    <string name="fb_login_protocol_scheme">fb227142767893716</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Menu_Area_Item1">모든시장</string>
+    <string name="Menu_Area_Item2">노량진</string>
+    <string name="Menu_Area_Item3">가락</string>
+    <string name="Menu_Area_Item4">마포</string>
+    <string name="Menu_Area_Item5">강서</string>
+    <string name="Menu_Area_Item6">인천</string>
+    <string name="Menu_Area_Item7">수원</string>
+    <string name="Menu_Area_Item8">평촌</string>
+    <string name="Menu_Area_Item9">구리</string>
+    <string name="Menu_Area_Item10">안산</string>
+    <string name="Menu_Area_Item11">화성</string>
+    <string name="Menu_Area_Item12">하남</string>
+    <string name="Menu_Area_Item13">용인</string>
+    <string name="Menu_Area_Item14">부산</string>
+    <string name="Menu_Area_Item15">광주</string>
+    <string name="Menu_Area_Item16">대전</string>
+    <string name="Menu_Area_Item17">강원도</string>
+    <string name="Menu_Area_Item18">전라도</string>
+    <string name="Menu_Area_Item19">충청도</string>
+    <string name="Menu_Area_Item20">경상도</string>
+    <string name="Menu_Area_Item21">제주도</string>
+    <string name="Menu_Area_Item22">마장동</string>
+
+    <string name="Menu_Kind_Item1">모든품목</string>
+    <string name="Menu_Kind_Item2">생선/횟감</string>
+    <string name="Menu_Kind_Item3">생선/비횟감</string>
+    <string name="Menu_Kind_Item4">게,새우류</string>
+    <string name="Menu_Kind_Item5">조개,전복류</string>
+    <string name="Menu_Kind_Item6">낙지,문어류</string>
+    <string name="Menu_Kind_Item7">멍게,해삼류</string>
+    <string name="Menu_Kind_Item8">김,미역류</string>
+    <string name="Menu_Kind_Item9">건어물</string>
+    <string name="Menu_Kind_Item10">젓갈,게장류</string>
+    <string name="Menu_Kind_Item11">육류</string>
+    <string name="Menu_Kind_Item12">상차림식당</string>
+    <string name="Menu_Kind_Item13">기타</string>
+
+
+
+    <string name="Menu_latest_Item1">최신순</string>
+    <string name="Menu_latest_Item2">인기순</string>
+    <string name="Menu_latest_Item3">오늘시세</string>
+    <string name="Menu_latest_Item4">배달가능</string>
+    <string name="Menu_latest_Item5">항공화물</string>
+
+
+
+</resources>

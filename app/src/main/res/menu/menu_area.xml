@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Menu_Area_Item3"
+            android:title="@string/Menu_Area_Item3" />
+        <item
+            android:id="@+id/Menu_Area_Item1"
+            android:title="@string/Menu_Area_Item1" />
+        <item
+            android:id="@+id/Menu_Area_Item2"
+            android:title="@string/Menu_Area_Item2" />
+        <item
+            android:id="@+id/Menu_Area_Item4"
+            android:title="@string/Menu_Area_Item4" />
+        <item
+            android:id="@+id/Menu_Area_Item5"
+            android:title="@string/Menu_Area_Item6" />
+        <item
+            android:id="@+id/Menu_Area_Item7"
+            android:title="@string/Menu_Area_Item7" />
+        <item
+            android:id="@+id/Menu_Area_Item8"
+            android:title="@string/Menu_Area_Item8" />
+        <item
+            android:id="@+id/Menu_Area_Item9"
+            android:title="@string/Menu_Area_Item9" />
+        <item
+            android:id="@+id/Menu_Area_Item10"
+            android:title="@string/Menu_Area_Item10" />
+        <item
+            android:id="@+id/Menu_Area_Item11"
+            android:title="@string/Menu_Area_Item11" />
+        <item
+            android:id="@+id/Menu_Area_Item12"
+            android:title="@string/Menu_Area_Item12" />
+        <item
+            android:id="@+id/Menu_Area_Item13"
+            android:title="@string/Menu_Area_Item13" />
+        <item
+            android:id="@+id/Menu_Area_Item14"
+            android:title="@string/Menu_Area_Item14" />
+        <item
+            android:id="@+id/Menu_Area_Item15"
+            android:title="@string/Menu_Area_Item15" />
+        <item
+            android:id="@+id/Menu_Area_Item16"
+            android:title="@string/Menu_Area_Item16" />
+        <item
+            android:id="@+id/Menu_Area_Item17"
+            android:title="@string/Menu_Area_Item17" />
+        <item
+            android:id="@+id/Menu_Area_Item18"
+            android:title="@string/Menu_Area_Item18" />
+        <item
+            android:id="@+id/Menu_Area_Item19"
+            android:title="@string/Menu_Area_Item19" />
+        <item
+            android:id="@+id/Menu_Area_Item20"
+            android:title="@string/Menu_Area_Item20" />
+        <item
+            android:id="@+id/Menu_Area_Item21"
+            android:title="@string/Menu_Area_Item21" />
+        <item
+            android:id="@+id/Menu_Area_Item22"
+            android:title="@string/Menu_Area_Item22" />
+    </group>
+
+
+
+
+
+</menu>
