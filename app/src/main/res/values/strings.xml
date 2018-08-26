@@ -44,13 +44,12 @@
     <string name="Menu_Kind_Item13">기타</string>
 
 
-
     <string name="Menu_latest_Item1">최신순</string>
     <string name="Menu_latest_Item2">인기순</string>
     <string name="Menu_latest_Item3">오늘시세</string>
     <string name="Menu_latest_Item4">배달가능</string>
     <string name="Menu_latest_Item5">항공화물</string>
 
-
+    <string name="detail_desc_text">Nothing</string>
 
 </resources>

@@ -7,6 +7,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.bumptech.glide.module.AppGlideModule;
+
 public class View_Main_Item extends LinearLayout {
 
     ImageView image_Main;
@@ -17,8 +22,8 @@ public class View_Main_Item extends LinearLayout {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.layout_main_item, this, true);
         image_Main = (ImageView) findViewById(R.id.imageitem);
-        image_Main.setImageDrawable(aItem.func_Get_Sales_Image());//이미지 세팅
-
+        //image_Main.setImageDrawable(aItem.func_Get_Sales_Image());//이미지 세팅
+        func_Set_Main_Image(aItem.func_Get_Sales_Image());
         text_Main = (TextView) findViewById(R.id.textitem);
         text_Main.setText(aItem.func_Get_String(0));//문구 세팅
     }
@@ -32,7 +37,14 @@ public class View_Main_Item extends LinearLayout {
         }
     }
     public void func_Set_Main_Image(Drawable icon) {
-        image_Main.setImageDrawable(icon);
+       // image_Main.setImageDrawable(icon);
+        FirebaseStorage fs = FirebaseStorage.getInstance();
+
+        StorageReference imagesRef = fs.getReference().child("user_store/Trustone_store/sales_Picture/dolpin.jpg");
+        GlideApp.with(this)
+                .load(imagesRef)
+                .centerCrop()
+                .into(image_Main);
     }
 
 

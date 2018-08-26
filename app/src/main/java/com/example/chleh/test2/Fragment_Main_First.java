@@ -78,8 +78,8 @@ public class Fragment_Main_First extends Fragment {
         Resources res = getResources();
         adapter= new Adapter_Main_Item_List(this.getActivity());
         /// 파일 데이터 추가
-
         adapter.func_Add_Item(new Java_Main_List_Item(res.getDrawable(R.drawable.bee,null),texts[0],false));//수정필요
+        adapter.func_Add_Item(new Java_Main_List_Item("bee.jpg",texts[1],false));//수정필요
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
