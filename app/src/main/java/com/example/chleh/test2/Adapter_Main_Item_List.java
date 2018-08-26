@@ -39,7 +39,8 @@ public class Adapter_Main_Item_List extends BaseAdapter {
 
         }else{
             dataView = (View_Main_Item) convertView;
-            dataView.func_Set_Main_Image(mItems.get(position).func_Get_Sales_Image());
+            //dataView.func_Set_Main_Image(mItems.get(position).func_Get_Sales_Image());
+            dataView.func_Set_Main_Image(mItems.get(position).func_Get_Sales_Filename());
             try {
                 dataView.func_Set_Main_Text(0,mItems.get(position).func_Get_String(0));
             } catch (IllegalAccessException e) {

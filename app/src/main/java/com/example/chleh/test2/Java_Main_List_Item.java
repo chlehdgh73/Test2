@@ -28,6 +28,8 @@ public class Java_Main_List_Item {
     public Java_Main_List_Item(String filename, String main_text,boolean ad)
     {
         boolean_ad=ad;
+        filename_Person="bee.jpg";
+        filename_Sales="bee.jpg";
         if(!ad)
         {
             this.filename_Sales=filename;
