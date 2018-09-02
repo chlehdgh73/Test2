@@ -8,6 +8,32 @@ public class Java_Main_List_Item {
     boolean boolean_ad;
     String filename_Sales;
     String filename_Person;
+    /*
+    *
+    *
+    * */
+
+
+    /*
+    ImageView image_Main;
+    TextView text_Main;
+    ImageView image_Person;
+    TextView text_Storename;
+    TextView text_Location;
+    TextView text_Desc;
+    TextView text_Lately;
+    TextView text_Service;
+    TextView text_Mob_Tel;
+    TextView text_Tel;
+    TextView text_Sale;
+    */
+
+
+
+
+
+
+
 
     public Java_Main_List_Item(Drawable Image, String main_text,boolean ad)
     {
