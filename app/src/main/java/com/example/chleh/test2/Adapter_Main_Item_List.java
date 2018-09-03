@@ -1,9 +1,11 @@
 package com.example.chleh.test2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -32,8 +34,11 @@ public class Adapter_Main_Item_List extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(int position, final View convertView, ViewGroup parent){
         View_Main_Item dataView=null;
+
+
+
         if(convertView == null){
             try {
                 dataView = new View_Main_Item(mContext,mItems.get(position));
@@ -55,14 +60,36 @@ public class Adapter_Main_Item_List extends BaseAdapter {
                 dataView.func_Set_Text(6,mItems.get(position).func_Get_String(0));
                 dataView.func_Set_Text(7,mItems.get(position).func_Get_String(0));
                 dataView.func_Set_Text(8,mItems.get(position).func_Get_String(0));
+                ImageView imageview_Sale= dataView.findViewById(R.id.imageview_Item);
+                ImageView imageview_Person=dataView.findViewById(R.id.imageview_Person);
 
-            } catch (IllegalAccessException e) {
+
+                final View_Main_Item finalDataView = dataView;//이벤트 리스터
+                imageview_Person.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent myIntent = new Intent(finalDataView.getContext(), Act_Sales_Detail.class);//구체적 뷰
+                    mContext.startActivity(myIntent);
+                }
+            });
+
+            imageview_Sale.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(finalDataView.getContext(), Act_Sales_Detail.class);//구체적 뷰
+                        mContext.startActivity(myIntent);
+                    }
+                });
+
+
+
+                } catch (IllegalAccessException e) {
                 e.printStackTrace();
-            }
+                }
+         }
+                return  dataView;
+                }
 
-        }
-        return  dataView;
+
+
     }
-
-
-}

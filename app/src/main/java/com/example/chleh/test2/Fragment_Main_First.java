@@ -83,14 +83,18 @@ public class Fragment_Main_First extends Fragment {
 
 
         adapter.func_Add_Item(new Java_Main_List_Item("car.jpg",texts[1],false));//수정필요
-        listview.setAdapter(adapter);
+        adapter.func_Add_Item(new Java_Main_List_Item("dog.jpg",texts[1],false));//수정필요
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Intent myIntent = new Intent(getActivity(), item_detail.class);//구체적 뷰
-                //startActivity(myIntent);
+                Intent myIntent = new Intent(getActivity(), Act_Sales_Detail.class);//구체적 뷰
+                startActivity(myIntent);
             }
         });
+        listview.setAdapter(adapter);
+
+
+
         return view;
 
 
