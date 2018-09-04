@@ -34,7 +34,7 @@ public class Adapter_Main_Item_List extends BaseAdapter {
     public long getItemId(int position) {
         return position;
     }
-    public View getView(int position, final View convertView, ViewGroup parent){
+    public View getView(final int position, final View convertView, ViewGroup parent){
         View_Main_Item dataView=null;
 
 
@@ -69,6 +69,7 @@ public class Adapter_Main_Item_List extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     Intent myIntent = new Intent(finalDataView.getContext(), Act_Sales_Detail.class);//구체적 뷰
+                    myIntent.putExtra("filename_Sale", mItems.get(position).func_Get_Sales_Filename()); //파일이름 전송!
                     mContext.startActivity(myIntent);
                 }
             });
@@ -77,6 +78,7 @@ public class Adapter_Main_Item_List extends BaseAdapter {
                     @Override
                     public void onClick(View v) {
                         Intent myIntent = new Intent(finalDataView.getContext(), Act_Sales_Detail.class);//구체적 뷰
+                        myIntent.putExtra("filename_Sale", mItems.get(position).func_Get_Sales_Filename()); //파일이름 전송!
                         mContext.startActivity(myIntent);
                     }
                 });
